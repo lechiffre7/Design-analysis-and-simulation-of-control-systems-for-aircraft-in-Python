@@ -16,21 +16,21 @@ For this case we are using longitudinal aicraft contrpol.
    
    $\delta_{elevator}$: Elevator deflection
    
- **System Equation:** 
+ **System Equations:** 
  
- 1.**Equation for $\delta u$**:
+ 1.**Equation for $\delta u:$**
  
  $\dot{\delta} u = \frac{1}{m_1}\left(D\left(\alpha_0, \delta_{\alpha}, \delta_{q}, \delta_{u}\right)\right) - m.g.\sin\left(\alpha_{0} + \delta_{\alpha}\right) + T_{thrust}\left(\delta_{elevator}\right)$
  
- 2. **Equation for $\delta \theta$**:
+ 2. **Equation for $\delta \theta:$**
 
  $\dot{\delta}\theta = \delta q$
 
-3. **Equation for $\delta q$**
+3. **Equation for $\delta q:$**
 
    $\dot{\delta} q = \frac{1}{I_{yy}}\left(-L\left(\alpha_{0}, delta_{\alpha}, \delta_{q}, \delta_{u}\right).c_{mean} - M\left(\alpha_{0}, \delta_{\alpha}, \delta_{q}, \delta_{u}\right).c_{mean}.\delta \theta + Q_{elevator}\left(\delta_{elevator}\right)\right)$
 
-4. **Equation for $\delta\alpha$**:
+4. **Equation for $\delta\alpha:$**
 
    $\dot{\alpha} = \delta q$
 
@@ -41,6 +41,6 @@ For this case we are using longitudinal aicraft contrpol.
    3. $\left(D\left(\alpha_0, \delta_{\alpha}, \delta_{q}, \delta_{u}\right)\right)$: Aeorodynamic drag,
    4. $\left(L\left(\alpha_0, \delta_{\alpha}, \delta_{q}, \delta_{u}\right)\right)$: Aerodynamic lift,
    5. $\left(M\left(\alpha_0, \delta_{\alpha}, \delta_{q}, \delta_{u}\right)\right)$: Aerodynamic pitching moment,
-   6. $Q_{elevator}\left(\delta_{elevator}\right)$: Elevator effectiveness term.
+   6. $Q_{elevator}\left(\delta_{elevator}\right)$: Elevator effectiveness term,
    7. $T_{thrust}\left(\delta_{elevator}\right)$: Thrust force.
    
